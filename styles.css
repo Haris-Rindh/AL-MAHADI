@@ -1,0 +1,326 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5E6CC; /* Warm Beige */
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #054A29; /* Deep Forest Green */
+    color: white;
+    position: relative;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .logo {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC857; /* Amber Gold */
+}
+
+.toggle-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: white;
+    background: url('bg3.jpg') no-repeat center center / cover;
+    padding: 6rem 1rem;
+    position: relative;
+}
+
+.cta-btn {
+    background: #FFC857; /* Amber Gold */
+    color: #333333;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #FFD580; /* Lighter Amber */
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #FDF4E3; /* Light Cream background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h2 {
+    color: #7A5230; /* Warm Brown */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    color: #4A4A4A; /* Dark Gray */
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Products Section */
+.products {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #FFFFFF; /* White Background */
+}
+
+.products h2 {
+    color: #054A29; /* Deep Forest Green */
+    margin-bottom: 1rem;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.product-card {
+    width: 300px;
+    text-align: center;
+    background: white;
+    border: 1px solid #87A96B; /* Olive Green */
+    border-radius: 5px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buy-btn {
+    background: #054A29; /* Deep Forest Green */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #87A96B; /* Olive Green */
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #F5E6CC; /* Warm Beige */
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #054A29; /* Deep Forest Green */
+    margin-bottom: 1rem;
+}
+
+.testimonial-card {
+    width: 80%;
+    margin: 1rem auto;
+    background: white;
+    border: 1px solid #87A96B; /* Olive Green */
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #054A29; /* Deep Forest Green */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #4267B2;
+}
+
+.social-btn.instagram { background-color: #E1306C; }
+.social-btn.whatsapp { background-color: #25D366; }
+
+.social-btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: nowrap;
+    }
+
+    .header-text {
+        text-align: center;
+        flex: 1;
+    }
+
+    .navbar {
+        flex: 0;
+    }
+
+    .toggle-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #054A29; /* Same as header */
+        padding: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Below the header */
+        right: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .social-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .header-logo .logo {
+        width: 50px;
+    }
+
+    .header-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+}
