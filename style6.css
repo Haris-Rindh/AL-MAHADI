@@ -21,197 +21,13 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.header-logo .logo {
-    width: 120px;
-    height: auto;
-}
-
-.header-text {
-    text-align: center;
-    flex: 1;
-}
-
-.header-text h1 {
-    font-size: 1.8rem;
-}
-
-.header-text h2 {
-    font-size: 1rem;
-    color: #eeb1b1; /* Golden Yellow */
-}
-
-.nav-links {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #FFC857;
-}
-
-/* Header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #1f4529; /* Header color */
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header-logo .logo {
-    width: 120px;
-    height: auto;
-}
-
-.header-text {
-    text-align: center;
-    flex: 1;
-}
-
-.header-text h1 {
-    font-size: 1.8rem;
-}
-
-.header-text h2 {
-    font-size: 1rem;
-    color: #eeb1b1; /* Golden Yellow */
-}
-
-/* Header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #1f4529; /* Header color */
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header-logo .logo {
-    width: 120px;
-    height: auto;
-}
-
-.header-text {
-    text-align: center;
-    flex: 1;
-}
-
-.header-text h1 {
-    font-size: 1.8rem;
-}
-
-.header-text h2 {
-    font-size: 1rem;
-    color: #eeb1b1; /* Golden Yellow */
-}
-
-/* Navigation Links - Default */
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.nav-links a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #FFC857;
-}
-
-/* Header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #1f4529; /* Header color */
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: none; /* Removes unnecessary line below the header */
-}
-
-.header-logo .logo {
-    width: 120px;
-    height: auto;
-}
-
-.header-text {
-    text-align: center;
-    flex: 1;
-}
-
-.header-text h1 {
-    font-size: 1.8rem;
-}
-
-.header-text h2 {
-    font-size: 1rem;
-    color: #eeb1b1; /* Golden Yellow */
-}
-
-/* Navigation Links - Default (Desktop) */
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.nav-links a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #FFC857;
-}
-
-/* Header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #1f4529; /* Header color */
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     border: none; /* Ensure no borders around the header */
-    box-shadow: none; /* Ensure no shadow is causing a line effect */
+    box-shadow: none; /* Removes any shadow causing unwanted lines */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo .logo {
@@ -220,8 +36,8 @@ body {
 }
 
 .header-text {
-    text-align: center;
     flex: 1;
+    text-align: center;
 }
 
 .header-text h1 {
@@ -230,7 +46,7 @@ body {
 
 .header-text h2 {
     font-size: 1rem;
-    color: #eeb1b1; /* Golden Yellow */
+    color: #eed3b1; /* Golden Yellow */
 }
 
 /* Navigation Links - Default (Desktop) */
@@ -246,32 +62,30 @@ body {
 /* Links */
 .nav-links a {
     color: white;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #FFC857;
+    color: #FFC857; /* Golden Yellow */
+}
+
+.nav-links a.active-link {
+    color: #FFC857; /* Highlight color */
+    font-weight: bold;
+    border-bottom: 2px solid #FFC857; /* Optional underline */
 }
 
 /* Toggle Menu Button - Mobile */
 .toggle-menu {
     display: none; /* Hidden on desktop */
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: white;
     font-size: 2rem;
-}
-
-.toggle-menu span {
-    display: block;
-    width: 30px; /* Wider lines */
-    height: 4px; /* Thicker lines */
-    background: white;
-    margin: 6px 0; /* Spacing between lines */
-    transition: transform 0.3s ease;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* Dropdown Menu - Mobile */
@@ -279,7 +93,7 @@ body {
     display: none; /* Hidden by default */
     flex-direction: column;
     background: #1f4529; /* Same as header color */
-    position: relative;
+    position: relative; /* Prevent overlaps */
     padding: 1rem 0;
     width: 100%; /* Full width */
     list-style: none;

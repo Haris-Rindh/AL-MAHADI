@@ -5,6 +5,8 @@ body {
     background-color: #F2F2F2; /* Soft Gray */
     color: #333333; /* Charcoal Gray */
     line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -16,6 +18,25 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.some-container {
+    padding: 0;
+    margin: 0 auto; /* Center-align while preventing overflow */
+}
+
 
 /* Header */
 .header {
