@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Al-Mahadi</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="2.png" alt="Al-Mahadi Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>AL-MAHADI</h1>
+            <h2>Natural Herbs</h2>
+        </div>
+        <nav class="navbar">
+            <button class="toggle-menu" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Details</h2>
+
+            <!-- Contact Methods -->
+            <div class="contact-grid">
+                <!-- Whatsapp -->
+                <div class="contact-item">
+                    <div class="contact-img">
+                        <img src="whatsapp.png" alt="Whatsapp">
+                    </div>
+                    <div class="contact-content">
+                        <h3>Whatsapp</h3>
+                        <p><i>+123 456 7890</i></p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-item">
+                    <div class="contact-img">
+                        <img src="gmail.png" alt="Email">
+                    </div>
+                    <div class="contact-content">
+                        <h3>Email</h3>
+                        <p><a href="mailto:almahadinaturalherbs@gmail.com">almahadinaturalherbs@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="contact-item">
+                    <div class="contact-img">
+                        <img src="insta.png" alt="Instagram">
+                    </div>
+                    <div class="contact-content">
+                        <h3>Instagram</h3>
+                        <p><a href="https://www.instagram.com/al_mahadinaturalherbs/profilecard/?igsh=MW12NGZlYTg0am1oaQ==" target="_blank">al_mahadinaturalherbs</a></p>
+                    </div>
+                </div>
+
+                <!-- Facebook -->
+                <div class="contact-item">
+                    <div class="contact-img">
+                        <img src="facebook.png" alt="Facebook">
+                    </div>
+                    <div class="contact-content">
+                        <h3>Facebook</h3>
+                        <p><i>AL-Mahadi</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer animated slide-up">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Providing premium, natural herbal products to enhance your life.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: almahadinaturalherbs@gmail.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="social-buttons">
+            <a href="#" class="social-btn facebook">
+                <img src="facebook.png" alt="facebook">
+            </a>
+            <a href="#" class="social-btn instagram">
+                <img src="instagram.png" alt="instagram">
+            </a>
+            <a href="#" class="social-btn whatsapp">
+                <img src="whatsapp.png" alt="whatsapp">
+            </a>
+        </div>
+        <p>&copy; 2024 Al-Mahadi Natural Herbs. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <script>
+        document.querySelector('.toggle-menu').addEventListener('click', function () {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
