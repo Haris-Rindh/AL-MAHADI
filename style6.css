@@ -1,0 +1,434 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1f4529; /* Header color */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo .logo {
+    width: 120px;
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+.header-text h1 {
+    font-size: 1.8rem;
+}
+
+.header-text h2 {
+    font-size: 1rem;
+    color: #eeb1b1; /* Golden Yellow */
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC857;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1f4529; /* Header color */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo .logo {
+    width: 120px;
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+.header-text h1 {
+    font-size: 1.8rem;
+}
+
+.header-text h2 {
+    font-size: 1rem;
+    color: #eeb1b1; /* Golden Yellow */
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1f4529; /* Header color */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo .logo {
+    width: 120px;
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+.header-text h1 {
+    font-size: 1.8rem;
+}
+
+.header-text h2 {
+    font-size: 1rem;
+    color: #eeb1b1; /* Golden Yellow */
+}
+
+/* Navigation Links - Default */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC857;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1f4529; /* Header color */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: none; /* Removes unnecessary line below the header */
+}
+
+.header-logo .logo {
+    width: 120px;
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+.header-text h1 {
+    font-size: 1.8rem;
+}
+
+.header-text h2 {
+    font-size: 1rem;
+    color: #eeb1b1; /* Golden Yellow */
+}
+
+/* Navigation Links - Default (Desktop) */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC857;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1f4529; /* Header color */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border: none; /* Ensure no borders around the header */
+    box-shadow: none; /* Ensure no shadow is causing a line effect */
+}
+
+.header-logo .logo {
+    width: 120px;
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+.header-text h1 {
+    font-size: 1.8rem;
+}
+
+.header-text h2 {
+    font-size: 1rem;
+    color: #eeb1b1; /* Golden Yellow */
+}
+
+/* Navigation Links - Default (Desktop) */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none; /* Remove any borders */
+}
+
+/* Links */
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC857;
+}
+
+/* Toggle Menu Button - Mobile */
+.toggle-menu {
+    display: none; /* Hidden on desktop */
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+.toggle-menu span {
+    display: block;
+    width: 30px; /* Wider lines */
+    height: 4px; /* Thicker lines */
+    background: white;
+    margin: 6px 0; /* Spacing between lines */
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown Menu - Mobile */
+.nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background: #1f4529; /* Same as header color */
+    position: relative;
+    padding: 1rem 0;
+    width: 100%; /* Full width */
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links.show {
+    display: flex; /* Display dropdown on toggle click */
+    position: absolute;
+    top: 100%; /* Places it directly below the header */
+    left: 0;
+    z-index: 999; /* Ensures it's above other sections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for dropdown */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+    }
+
+    .nav-links.show {
+        display: flex; /* Display on toggle menu click */
+    }
+
+    .toggle-menu {
+        display: block; /* Show toggle menu on mobile */
+    }
+
+    .header {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 769px) {
+    .toggle-menu {
+        display: none; /* Hide toggle menu on desktop */
+    }
+
+    .nav-links {
+        display: flex; /* Always visible on desktop */
+        flex-direction: row; /* Horizontal alignment */
+        position: relative;
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.contact-img img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.contact-content h3 {
+    color: #1f4529;
+    margin-bottom: 0.5rem;
+}
+.contact-item .contact-content a {
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background: #1f4529; /* Footer color */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: left;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFC857; /* Golden Yellow */
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    color: #002B5B; /* Deep Blue */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-btn img {
+    width: 60%; /* Adjust the image size relative to the button */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-btn:hover {
+    transform: scale(1.2);
+}
