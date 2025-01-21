@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Complaint - Al-Mahadi</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom Font and Styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <style>
+        /* Global Styles for Al-Mahadi Theme */
+        body {
+            background-color: #f4f4f4; /* Light background */
+            font-family: 'Roboto', sans-serif; /* Elegant font */
+            color: #333; /* Dark text for contrast */
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #006400; /* Dark green background */
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+            font-family: 'Amiri', serif;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .container {
+            max-width: 800px; /* Width similar to A4 */
+            margin: auto; /* Center the container */
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff; /* White background for form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        h1 {
+            font-family: 'Amiri', serif; /* Elegant Arabic-inspired font for the header */
+            color: #006400; /* Dark green color for elegance */
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .section-title {
+            color: #006400; /* Green color for headings */
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: #006400; /* Dark green buttons */
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .text-center input {
+            margin-top: 10px;
+            padding: 10px 30px;
+            font-size: 16px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+        }
+
+        .faq-section {
+            margin-top: 30px;
+        }
+
+        .form-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Al-Mahadi Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prodcutspage.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cutomer.html">Customer Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Form Content -->
+    <div class="container mt-5">
+        <h1><b><u>Customer Complaint Form</u></b></h1>
+
+        <div class="contact-info">
+            <h2 class="section-title">Submit Your Complaint</h2>
+            <p>If you are experiencing any issues related to our website, product, or shipping, please fill out the form below. We will address your concerns as quickly as possible.</p>
+            <p><strong>Email:</strong> <a href="mailto:support@almahadistore.com">support@almahadistore.com</a> (Click to send an email directly)</p>
+        </div>
+
+        <!-- Complaint Form -->
+        <form action="submit_complaint.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject of Complaint</label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="issue">Describe Your Issue/Complaint</label>
+                <textarea class="form-control" id="issue" name="issue" rows="5" required></textarea>
+                <small class="form-text">Please be as detailed as possible so we can assist you better.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category of Complaint</label>
+                <select class="form-control" id="category" name="category">
+                    <option value="Website Issue">Website Issue</option>
+                    <option value="Product Issue">Product Issue</option>
+                    <option value="Shipping Issue">Shipping Issue</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit Complaint</button>
+            </div>
+        </form>
+
+        <div class="mt-4">
+            <h2 class="section-title">Contact Information</h2>
+            <p>If you prefer to directly contact our customer support team, feel free to reach us at:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@almahadistore.com">support@almahadistore.com</a></li>
+                <li><strong>Phone:</strong> +92-300-1234567</li>
+                <li><strong>Office Hours:</strong> Monday to Friday, 9:00 AM to 6:00 PM</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

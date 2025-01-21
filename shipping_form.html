@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Form - Al-Mahadi</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom Font and Styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <style>
+        /* Global Styles for Al-Mahadi Theme */
+        body {
+            background-color: #f4f4f4; /* Light background */
+            font-family: 'Roboto', sans-serif; /* Elegant font */
+            color: #333; /* Dark text for contrast */
+        }
+
+        .container {
+            max-width: 800px; /* Width similar to A4 */
+            margin: auto; /* Center the container */
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff; /* White background for form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        h1 {
+            font-family: 'Amiri', serif; /* Elegant Arabic-inspired font for the header */
+            color: #006400; /* Dark green color for elegance */
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        fieldset {
+            border: 2px solid #006400; /* Green border to match theme */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #006400; /* Green color for the headings */
+        }
+
+        label {
+            font-weight: 500;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-check-label {
+            color: #006400; /* Green text for checkboxes/radio buttons */
+        }
+
+        .btn {
+            background-color: #006400; /* Dark green buttons */
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .btn-secondary {
+            background-color: #8B8B8B; /* Gray color for reset */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        details {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .text-center input {
+            margin-top: 10px;
+            padding: 10px 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="">
+            <h1><b><u>Enter Your Info</u></b></h1>
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto"><b>Personal Info</b></legend>
+                <div class="form-group">
+                    <label for="first-name">First name:</label>
+                    <input type="text" name="first_name" id="first-name" class="form-control" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name:</label>
+                    <input type="text" name="last_name" id="last-name" class="form-control" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="number" name="phone_number" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+            </fieldset>
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto"><b>Shipping Address</b></legend>
+                <div class="form-group">
+                    <label for="address1">Address line 1:</label>
+                    <textarea name="address1" id="address1" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="address2">Address line 2:</label>
+                    <textarea name="address2" id="address2" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select name="country" id="country" class="form-control" required>
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="Pak">Pakistan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <select name="city" id="city" class="form-control" required>
+                        <option value="" disabled selected>Select City</option>
+                        <option value="Multan">Multan</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Islamabad">Islamabad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="state">Province/Region:</label>
+                    <select name="state" id="state" class="form-control" required>
+                        <option value="" disabled selected>Select Province</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="KPK">KPK</option>
+                        <option value="Sindh">Sindh</option>
+                        <option value="Balochistan">Balochistan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">Postal/Zip code:</label>
+                    <input type="number" name="postal_code" id="postal-code" class="form-control" required>
+                </div>
+            </fieldset>
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto"><b>Shipping Method</b></legend>
+                <div class="form-check">
+                    <input type="radio" name="Method" id="standard" class="form-check-input" required>
+                    <label for="standard" class="form-check-label">Standard</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Method" id="express" class="form-check-input" required>
+                    <label for="express" class="form-check-label">Express</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Method" id="overnight" class="form-check-input" required>
+                    <label for="overnight" class="form-check-label">Overnight</label>
+                </div>
+            </fieldset>
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto"><b>Billing Address</b></legend>
+                <div class="form-check">
+                    <input type="checkbox" name="" id="same-as-shipping" class="form-check-input">
+                    <label for="same-as-shipping" class="form-check-label">Same as Shipping Address</label>
+                </div>
+                <p>OR</p>
+                <details>
+                    <summary>Click to add Billing address</summary>
+                    <div class="form-group">
+                        <label for="billing-address1">Address line 1:</label>
+                        <textarea name="billing_address1" id="billing-address1" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-address2">Address line 2:</label>
+                        <textarea name="billing_address2" id="billing-address2" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-country">Country:</label>
+                        <select name="billing_country" id="billing-country" class="form-control">
+                            <option value="" disabled selected>Select Country</option>
+                            <option value="Pak">Pakistan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-city">City:</label>
+                        <select name="billing_city" id="billing-city" class="form-control">
+                            <option value="" disabled selected>Select City</option>
+                            <option value="Multan">Multan</option>
+                            <option value="Lahore">Lahore</option>
+                            <option value="Karachi">Karachi</option>
+                            <option value="Islamabad">Islamabad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-state">Province/Region:</label>
+                        <select name="billing_state" id="billing-state" class="form-control">
+                            <option value="" disabled selected>Select Province</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="KPK">KPK</option>
+                            <option value="Sindh">Sindh</option>
+                            <option value="Balochistan">Balochistan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-postal-code">Postal/Zip code:</label>
+                        <input type="number" name="billing_postal_code" id="billing-postal-code" class="form-control">
+                    </div>
+                </details>
+            </fieldset>
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto"><b>Payment Method</b></legend>
+                <div class="form-group">
+                    <label for="payment-method">Payment Options:</label>
+                    <select name="payment_method" id="payment-method" class="form-control">
+                        <option value="" disabled selected>Select Payment Method</option>
+                        <option value="Credit/Debit Card">Credit/Debit Card</option>
+                        <option value="Easypaisa">Easypaisa</option>
+                        <option value="Jazz Cash">Jazz Cash</option>
+                        <option value="Cash on Delivery">Cash on Delivery</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="text-center">
+                <input type="submit" class="btn btn-primary">
+                <input type="reset" class="btn btn-secondary">
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Linking js -->
+    <script src="script.js"></script>
+</body>
+</html>

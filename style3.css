@@ -1,0 +1,73 @@
+/* Product Hero Section */
+.product-hero {
+    background: url('https://i.ibb.co/N2gWwQr/ai-generated-8417809-1920.png') no-repeat center center / cover;
+    padding: 6rem 1rem;
+    color: white;
+    text-align: center;
+}
+
+.product-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-hero p {
+    font-size: 1.2rem;
+}
+
+/* Product Details Section */
+.product-details h2 {
+    font-size: 2.5rem;
+    color: #558b2f;
+    margin-bottom: 1rem;
+}
+
+.product-details .lead {
+    font-size: 1.1rem;
+}
+
+.product-details ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.product-details .btn-success {
+    background-color: #558b2f;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+}
+
+.product-details .btn-success:hover {
+    background-color: #33691e;
+}
+
+/* Related Products Section */
+.related-products h3 {
+    font-size: 2rem;
+    color: #558b2f;
+    margin-bottom: 2rem;
+}
+
+.related-products .product-card {
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    border: 1px solid #c8e6c9;
+}
+
+.related-products .product-card img {
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.related-products .product-card .card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.related-products .product-card .price {
+    color: #558b2f;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

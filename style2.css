@@ -1,0 +1,65 @@
+/* Product Card Styling */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card .card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-card .price {
+    color: #558b2f;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-card .btn {
+    background: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background: #66bb6a;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://i.ibb.co/vJp5YcJ/food-8775697-1920.jpg') no-repeat center center / cover;
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background: #2e7d32;
+    color: white;
+    padding: 1rem 0;
+}

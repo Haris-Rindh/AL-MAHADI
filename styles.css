@@ -172,8 +172,9 @@ img, video, iframe {
 
 /* Hero Section */
 .hero {
-    background: url('bg4.jpg') no-repeat center center / cover;
+    background: url('img/bg4.jpg') no-repeat center center / cover;
     position: relative;
+    background-color: #684500;
     color: white;
     text-align: center;
     padding: 6rem 2rem;
@@ -633,7 +634,6 @@ img, video, iframe {
     flex-direction: column;
     gap: 1.5rem;
 }
-
 
 /* Keyframes */
 @keyframes fadeIn {

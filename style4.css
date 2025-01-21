@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif; /* Font style for the body */
+    background-color: #f8f9fa; /* Light background color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding to the body */
+}
+
+h1 {
+    text-align: center; /* Center align the heading */
+    color: #343a40; /* Dark color for the heading */
+}
+
+form {
+    max-width: 600px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the form */
+}
+
+fieldset {
+    border: 1px solid #ced4da; /* Border color for fieldset */
+    border-radius: 5px; /* Rounded corners for fieldset */
+    padding: 10px; /* Padding inside fieldset */
+    margin-bottom: 20px; /* Space below each fieldset */
+}
+
+legend {
+    font-weight: bold; /* Bold text for legend */
+    color: #495057; /* Dark color for legend */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding for input fields */
+    margin: 5px 0 15px 0; /* Space around input fields */
+    border: 1px solid #ced4da; /* Border color for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 10px; /* Space between buttons */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+p {
+    text-align: center; /* Center align paragraph */
+}
